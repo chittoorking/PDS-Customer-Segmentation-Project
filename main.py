@@ -66,7 +66,7 @@ st.markdown(
 )
 
 
-st.sidebar.markdown('<h1 style="margin-left:8%; color:#FA8072">Bike Sharing Prediction</h1>', unsafe_allow_html=True)
+st.sidebar.markdown('<h1 style="margin-left:8%; color:#FA8072">Customer Segment Prediction</h1>', unsafe_allow_html=True)
 
 add_selectbox = st.sidebar.radio(
     "",
@@ -84,7 +84,7 @@ if add_selectbox == 'About':
     st.markdown('prediction. ',unsafe_allow_html=True)
     st.markdown('Description',unsafe_allow_html=True)
     
-elif add_selectbox == 'Customer Segment ':
+elif add_selectbox == 'Customer Segment Prediction':
 	
       st.subheader('PREDICTION')
       pickle_in = open('KMeans_customer_deployed', 'rb')
