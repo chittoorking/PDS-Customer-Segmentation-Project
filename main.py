@@ -83,7 +83,24 @@ if add_selectbox == 'About':
 customer ID, amount spent etc. Understanding and planning a strategy on the cus-
 tomers and targeting the marketing towards the buyers not only helps the business
 grow faster but also leads to customer satisfaction''',unsafe_allow_html=True)
-    
+     st.markdown('<h4>Cluster 0</h4>', unsafe_allow_html=True)	
+     st.markdown('''In this cluster  more people are around the age 30 .Annual income ranges from  20 to 100k$ .
+     Most people have annual income around 60k$.Spending score is high around 40 to 50.''')
+     st.markdown('<h4>Cluster 1</h4>', unsafe_allow_html=True)	
+     st.markdown('''In this cluster  more people are around the age 30 .Annual income ranges from  20 to 100k$ .Most people have annual income around 70k$
+     Spending score is high around 40 to 50.''')
+     st.markdown('<h4>Cluster 2</h4>', unsafe_allow_html=True)
+     st.markdown('''In this cluster  more people are around the age 20 to 30 .Annual income ranges from  20 to 100k$ .Most people have annual income around 80k$ to 90k$ .
+     Spending score is high around 30.''')
+     st.markdown('<h4>Cluster 3</h4>', unsafe_allow_html=True)	
+     st.markdown('''In this cluster  more people are around the age 30 to 40 and 80 to 60 to 80.Annual income ranges from  20 to 100k$ .Most people have annual income around 80k$ .Spending score is high around 50 to 60 and 90 to 100
+     Spending score is high around 30.''')
+     st.markdown('<h4>Cluster 4</h4>', unsafe_allow_html=True)
+     st.markdown('''In this cluster  more people are around the age 20 to 40 .Annual income ranges from  20 to 100k$ .Most people have annual income around 60k$.
+     Spending score is high around 40 to 50 and 80 t0 100.''')
+     st.markdown('<h4>Cluster 5</h4>', unsafe_allow_html=True)
+     st.markdown('''In this cluster  more people are around the age 30 .Annual income ranges from  20 to 100k$ .Most people have annual income around 20 to 40k$.
+     Spending score is high around 40 to 50''')
 elif add_selectbox == 'Customer Segment Prediction':
 	
       st.subheader('PREDICTION')
@@ -102,30 +119,7 @@ elif add_selectbox == 'Customer Segment Prediction':
       if submit:
               prediction = clusterer.predict([[Gender,Age,Annual_income,spending_score]])
               st.write('Hi',name,'The predicted customer segment is',int(prediction))
-	      if int(prediction) == 0:
-	            st.write('In this cluster  more people are around the age 30 .')
-	            st.write('Annual income ranges from  20 to 100k$ .Most people have annual income around 60k$')
-	            st.write('Spending score is high around 40 to 50.')
-	      if int(prediction) == 1:
-	            st.write('In this cluster  more people are around the age 30 .')
-	            st.write('Annual income ranges from  20 to 100k$ .Most people have annual income around 70k$')
-	            st.write('Spending score is high around 40 to 50.')
-	      if int(prediction) == 2:
-	            st.write('In this cluster  more people are around the age 20 to 30 .')
-	            st.write('Annual income ranges from  20 to 100k$ .Most people have annual income around 80k$ to 90k$')
-	            st.write('Spending score is high around 30.')
-              if int(prediction) == 3:
-	            st.write('In this cluster  more people are around the age 30 to 40 and 80 to 60 to 80.')
-                    st.write('Annual income ranges from  20 to 100k$ .Most people have annual income around 80k$')
-	            st.write('Spending score is high around 50 to 60 and 90 to 100')
-              if int(prediction) == 4:
-	            st.write('In this cluster  more people are around the age 20 to 40 .')
-	            st.write('Annual income ranges from  20 to 100k$ .Most people have annual income around 60k$')
-	            st.write('Spending score is high around 40 to 50 and 80 t0 100.')
-	      if int(prediction) == 5:
-	            st.write('In this cluster  more people are around the age 30 .')
-	            st.write('Annual income ranges from  20 to 100k$ .Most people have annual income around 20 to 40k$')
-	            st.write('Spending score is hish around 40 to 50.')
+              
 elif add_selectbox == 'Team':
     
     st.subheader('Teamates')
