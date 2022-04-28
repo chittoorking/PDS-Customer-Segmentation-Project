@@ -100,32 +100,32 @@ elif add_selectbox == 'Customer Segment Prediction':
       submit = st.button('Predict')
 
       if submit:
-            prediction = clusterer.predict([[Gender,Age,Annual_income,spending_score]])
-            st.write('Hi',name,'The predicted customer segment is',int(prediction))
-	    if int(prediction) == 0:
-	      st.write('In this cluster  more people are around the age 30 .')
-	      st.write('Annual income ranges from  20 to 100k$ .Most people have annual income around 60k$')
-	      st.write('Spending score is high around 40 to 50.')
-	    if int(prediction) == 1:
-	       st.write('In this cluster  more people are around the age 30 .')
-	       st.write('Annual income ranges from  20 to 100k$ .Most people have annual income around 70k$')
-	       st.write('Spending score is high around 40 to 50.')
-	    if int(prediction) == 2:
-	       st.write('In this cluster  more people are around the age 20 to 30 .')
-	       st.write('Annual income ranges from  20 to 100k$ .Most people have annual income around 80k$ to 90k$')
-	       st.write('Spending score is high around 30.')
-            if int(prediction) == 3:
-	       st.write('In this cluster  more people are around the age 30 to 40 and 80 to 60 to 80.')
-               st.write('Annual income ranges from  20 to 100k$ .Most people have annual income around 80k$')
-	       st.write('Spending score is high around 50 to 60 and 90 to 100')
-            if int(prediction) == 4:
-	       st.write('In this cluster  more people are around the age 20 to 40 .')
-	       st.write('Annual income ranges from  20 to 100k$ .Most people have annual income around 60k$')
-	       st.write('Spending score is high around 40 to 50 and 80 t0 100.')
-	    if int(prediction) == 5:
-	       st.write('In this cluster  more people are around the age 30 .')
-	       st.write('Annual income ranges from  20 to 100k$ .Most people have annual income around 20 to 40k$')
-	       st.write('Spending score is hish around 40 to 50.')
+              prediction = clusterer.predict([[Gender,Age,Annual_income,spending_score]])
+              st.write('Hi',name,'The predicted customer segment is',int(prediction))
+	      if int(prediction) == 0:
+	            st.write('In this cluster  more people are around the age 30 .')
+	            st.write('Annual income ranges from  20 to 100k$ .Most people have annual income around 60k$')
+	            st.write('Spending score is high around 40 to 50.')
+	      if int(prediction) == 1:
+	            st.write('In this cluster  more people are around the age 30 .')
+	            st.write('Annual income ranges from  20 to 100k$ .Most people have annual income around 70k$')
+	            st.write('Spending score is high around 40 to 50.')
+	      if int(prediction) == 2:
+	            st.write('In this cluster  more people are around the age 20 to 30 .')
+	            st.write('Annual income ranges from  20 to 100k$ .Most people have annual income around 80k$ to 90k$')
+	            st.write('Spending score is high around 30.')
+              if int(prediction) == 3:
+	            st.write('In this cluster  more people are around the age 30 to 40 and 80 to 60 to 80.')
+                    st.write('Annual income ranges from  20 to 100k$ .Most people have annual income around 80k$')
+	            st.write('Spending score is high around 50 to 60 and 90 to 100')
+              if int(prediction) == 4:
+	            st.write('In this cluster  more people are around the age 20 to 40 .')
+	            st.write('Annual income ranges from  20 to 100k$ .Most people have annual income around 60k$')
+	            st.write('Spending score is high around 40 to 50 and 80 t0 100.')
+	      if int(prediction) == 5:
+	            st.write('In this cluster  more people are around the age 30 .')
+	            st.write('Annual income ranges from  20 to 100k$ .Most people have annual income around 20 to 40k$')
+	            st.write('Spending score is hish around 40 to 50.')
 elif add_selectbox == 'Team':
     
     st.subheader('Teamates')
