@@ -79,10 +79,10 @@ if add_selectbox == 'About':
     st.subheader('ABOUT THE PROJECT')
 
     st.markdown('<h4>Background</h4>', unsafe_allow_html=True)
-    st.markdown('Customer ',unsafe_allow_html=True)
-    st.markdown('Segment',unsafe_allow_html=True)
-    st.markdown('prediction. ',unsafe_allow_html=True)
-    st.markdown('Description',unsafe_allow_html=True)
+    st.markdown('''Owning any business involves some basic data about customers like name, age,
+customer ID, amount spent etc. Understanding and planning a strategy on the cus-
+tomers and targeting the marketing towards the buyers not only helps the business
+grow faster but also leads to customer satisfaction''',unsafe_allow_html=True)
     
 elif add_selectbox == 'Customer Segment Prediction':
 	
